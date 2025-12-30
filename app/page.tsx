@@ -1,65 +1,197 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import { useEffect, useMemo, useState } from "react";
+
+import { MainMenuES } from "./data/main_menu_es";
+import { MainMenuEN } from "./data/main_menu_en";
+import { BreakfastMenuES } from "./data/breakfast_menu_es";
+import { DinnerMenuES } from "./data/dinner_menu_es";
+import { BreakfastMenuEN } from "./data/breakfast_menu_en";
+import { DinnerMenuEN } from "./data/dinner_menu_en";
+import { slugify } from "./utils";
+import { PRIMARY } from "./constants";
+
+export default function MenuPage() {
+  const [lang, setLang] = useState<"es" | "en">("es");
+  const [active, setActive] = useState("");
+
+  const hour = new Date().getHours();
+  const showBreakfast = hour < 18;
+  const showDinner = hour >= 18;
+
+  const menus = useMemo(() => {
+    const main = lang === "es" ? MainMenuES : MainMenuEN;
+    const breakfast = lang === "es" ? BreakfastMenuES : BreakfastMenuEN;
+    const dinner = lang === "es" ? DinnerMenuES : DinnerMenuEN;
+  
+    if (showDinner) {
+      return [dinner, ...main];
+    }
+  
+    if (showBreakfast) {
+      return [breakfast, ...main];
+    }
+  
+    return main;
+  }, [lang, showBreakfast, showDinner]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: "-40% 0px -50% 0px" }
+    );
+
+    menus.forEach((menu: Menu) => {
+      const id = slugify(menu.categorie);
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [menus]);
+
+  const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <main className="min-h-screen bg-neutral-900 text-white">
+      {/* HEADER */}
+      <header className="sticky top-0 z-30 bg-neutral-900 border-b border-neutral-800">
+        <div className="flex justify-between items-center px-4 py-4">
+          {/* Replace with your restaurant name */}
+          <h1 className="text-lg font-semibold">Hunter Coffee Shop</h1>
+
+          <div className="flex gap-2">
+            <button
+              onClick={() => setLang("es")}
+              className={`px-3 py-1 text-sm rounded ${
+                lang === "es"
+                  ? "bg-white text-black"
+                  : "border border-white/40"
+              }`}
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              ES
+            </button>
+            <button
+              onClick={() => setLang("en")}
+              className={`px-3 py-1 text-sm rounded ${
+                lang === "en"
+                  ? "bg-white text-black"
+                  : "border border-white/40"
+              }`}
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              EN
+            </button>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+
+        {/* CATEGORY NAV */}
+        <nav className="flex gap-6 overflow-x-auto px-4 pb-3">
+          {menus.map((menu: Menu) => {
+            const id = slugify(menu.categorie);
+
+            return (
+              <button
+                key={id}
+                onClick={() => scrollTo(id)}
+                className="pb-1 whitespace-nowrap text-base transition"
+                style={{
+                  color:
+                    active === id
+                      ? PRIMARY
+                      : "rgba(255,255,255,0.7)",
+                  borderBottom:
+                    active === id
+                      ? `2px solid ${PRIMARY}`
+                      : "2px solid transparent",
+                }}
+              >
+                {menu.categorie}
+              </button>
+            );
+          })}
+        </nav>
+      </header>
+
+      {/* CONTENT */}
+      <section className="px-4 py-14 space-y-28">
+        {menus.map((menu: Menu) => {
+          const id = slugify(menu.categorie);
+
+          return (
+            <section key={id} id={id} className="scroll-mt-[160px] md:scroll-mt-[140px]">
+              <div className="flex items-center gap-3 mb-6">
+                <h2 className="text-3xl font-semibold">
+                  {menu.categorie}
+                </h2>
+
+                {menu.availableUntil && (
+                  <span className="text-xs text-neutral-400">
+                    Hasta {menu.availableUntil}:00
+                  </span>
+                )}
+
+                {menu.availableFrom && (
+                  <span className="text-xs bg-[#ff6f00] text-black px-2 rounded">
+                    Desde {menu.availableFrom}:00
+                  </span>
+                )}
+              </div>
+
+              <div className="space-y-7">
+                {menu.plats.map((plat: Plat) => (
+                  <div key={plat.label + plat.price}>
+                    <div className="flex justify-between gap-6">
+                      <p className="text-lg font-medium">
+                        {plat.label}
+                      </p>
+                      {plat.price > 0 && (
+                        <p className="text-lg font-medium">
+                          ${plat.price}
+                        </p>
+                      )}
+                    </div>
+
+                    {plat.description && (
+                      <p className="text-sm text-neutral-400 mt-1">
+                        {plat.description}
+                      </p>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              {menu.comment && (
+                <p className="text-sm text-neutral-400 mt-8">
+                  {menu.comment}
+                </p>
+              )}
+
+              {menu.extras && (
+                <div className="mt-8">
+                  <p className="text-sm font-medium mb-3">
+                    Extras
+                  </p>
+                  <div className="flex flex-wrap gap-3 text-sm text-neutral-400">
+                    {menu.extras.map((extra: Extra) => (
+                      <span key={extra.label}>
+                        {extra.label} +${extra.price}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </section>
+          );
+        })}
+      </section>
+    </main>
   );
 }
