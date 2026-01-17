@@ -5,9 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { MainMenuES } from "./data/main_menu_es";
 import { MainMenuEN } from "./data/main_menu_en";
 import { BreakfastMenuES } from "./data/breakfast_menu_es";
-import { DinnerMenuES } from "./data/dinner_menu_es";
 import { BreakfastMenuEN } from "./data/breakfast_menu_en";
-import { DinnerMenuEN } from "./data/dinner_menu_en";
 import { slugify } from "./utils";
 import { PRIMARY } from "./constants";
 
@@ -15,25 +13,12 @@ export default function MenuPage() {
   const [lang, setLang] = useState<"es" | "en">("es");
   const [active, setActive] = useState("");
 
-  const hour = new Date().getHours();
-  const showBreakfast = hour < 18;
-  const showDinner = hour >= 18;
-
   const menus = useMemo(() => {
     const main = lang === "es" ? MainMenuES : MainMenuEN;
     const breakfast = lang === "es" ? BreakfastMenuES : BreakfastMenuEN;
-    const dinner = lang === "es" ? DinnerMenuES : DinnerMenuEN;
   
-    if (showDinner) {
-      return [dinner, ...main];
-    }
-  
-    if (showBreakfast) {
-      return [breakfast, ...main];
-    }
-  
-    return main;
-  }, [lang, showBreakfast, showDinner]);
+    return [breakfast, ...main];
+  }, [lang]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
