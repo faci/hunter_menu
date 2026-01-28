@@ -1,0 +1,298 @@
+{
+  "common": {
+    "back": "Back"
+  },
+  "labels": {
+    "breakfast": "Breakfast",
+    "bowls-crepes": "Bowls & Crepes",
+    "food": "Food",
+    "drinks": "Drinks"
+  },
+  "menu": {
+    "bowls": {
+      "title": "Bowls",
+      "items": {
+        "fruit_bowl": {
+          "label": "Fruit Bowl",
+          "description": "Seasonal fruits, peanut butter and honey"
+        },
+        "el_classico": {
+          "label": "El Classico",
+          "description": "Greek yogurt, seasonal fruits, peanut butter and chia seeds"
+        },
+        "granola_bowl": {
+          "label": "Granola Bowl",
+          "description": "Greek yogurt, granola, seasonal fruits and peanut butter"
+        },
+        "smoothie_bowl": {
+          "label": "Smoothie Bowl",
+          "description": "Smoothie, seasonal fruits, granola and honey"
+        }
+      },
+      "extras": {
+        "honey": "Honey",
+        "peanut_butter": "Peanut butter",
+        "chia": "Chia seeds"
+      }
+    },
+    "breakfast": {
+      "title": "Breakfast",
+      "availableUntil": "Available until 6:00 PM",
+      "items": {
+        "pancakes": {
+          "label": "Pancakes",
+          "description": ""
+        },
+        "omelette": {
+          "label": "Omelette",
+          "description": "Omelette with ham, cheese and vegetables. Tortilla included"
+        },
+        "eggs_your_way": {
+          "label": "Eggs your way",
+          "description": "Scrambled or fried eggs, tortilla included (choose one: ham, cheese or vegetables)"
+        },
+        "tortilla_with_meat": {
+          "label": "Tortilla with meat",
+          "description": "Ropa vieja, tortillas (x2), tomato salad"
+        }
+      }
+    },
+    "burgers": {
+      "title": "Burgers",
+      "items": {
+        "burger": {
+          "label": "Burger",
+          "description": "Beef or chicken with onion, tomato, lettuce and cheese"
+        },
+        "special_burger": {
+          "label": "Special burger",
+          "description": "Smash beef, egg, caramelized onion, tomato, lettuce, cheese, special sauce"
+        }
+      },
+      "extras": {
+        "double": "Double",
+        "pickles": "Pickles",
+        "bacon": "Bacon",
+        "cheese": "Cheese"
+      }
+    },
+    "coffee": {
+      "title": "Coffee & Drinks",
+      "items": {
+        "espresso": {
+          "label": "Espresso",
+          "description": ""
+        },
+        "double_espresso": {
+          "label": "Double espresso",
+          "description": ""
+        },
+        "americano": {
+          "label": "Americano",
+          "description": ""
+        },
+        "coffee_with_milk": {
+          "label": "Coffee Latte",
+          "description": ""
+        },
+        "cappuccino": {
+          "label": "Cappuccino",
+          "description": ""
+        },
+        "mocha": {
+          "label": "Mocha",
+          "description": ""
+        },
+        "hot_chocolate": {
+          "label": "Hot chocolate",
+          "description": ""
+        },
+        "hot_chocolate_with_milk": {
+          "label": "Hot chocolate with milk",
+          "description": ""
+        },
+        "tea": {
+          "label": "Tea",
+          "description": ""
+        },
+        "iced_americano": {
+          "label": "Iced Americano",
+          "description": ""
+        },
+        "iced_latte": {
+          "label": "Iced Latte",
+          "description": ""
+        },
+        "chocolate_caramel_frappe": {
+          "label": "Chocolate or caramel frappe",
+          "description": ""
+        }
+      },
+      "extras": {
+        "milk": "Milk",
+        "peanut_butter": "Peanut butter",
+        "honey": "Honey",
+        "protein": "Protein"
+      }
+    },
+    "crepes": {
+      "title": "Crepes",
+      "items": {
+        "sugar": {
+          "label": "Sugar",
+          "description": ""
+        },
+        "sugar_salted_butter": {
+          "label": "Sugar and salted butter",
+          "description": ""
+        },
+        "chocolate_or_caramel": {
+          "label": "Chocolate or caramel",
+          "description": ""
+        },
+        "chocolate_or_caramel_with_cream": {
+          "label": "Chocolate or caramel with whipped cream",
+          "description": ""
+        },
+        "banana_temptation": {
+          "label": "Banana temptation",
+          "description": "Banana and chocolate or caramel"
+        },
+        "banana_temptation_with_cream": {
+          "label": "Banana temptation with whipped cream",
+          "description": "Banana and chocolate or caramel"
+        },
+        "classic_combo": {
+          "label": "Classic combo",
+          "description": "Coffee with sugar crepe or sugar and salted butter crepe"
+        },
+        "sweet_combo": {
+          "label": "Sweet combo",
+          "description": "Coffee with chocolate or caramel crepe"
+        },
+        "specialty_combo": {
+          "label": "Specialty combo",
+          "description": "Coffee with banana temptation crepe"
+        }
+      }
+    },
+    "mainDishes": {
+      "title": "Main dishes",
+      "comment": "Side options: rice, patacones or french fries",
+      "items": {
+        "whole_fried_fish": {
+          "label": "Whole fried fish",
+          "description": "Fresh fish, fried to order"
+        },
+        "garlic_shrimp": {
+          "label": "Garlic shrimp",
+          "description": "Shrimp sautéed with garlic and butter"
+        },
+        "shrimp_red_sauce": {
+          "label": "Shrimp in red sauce",
+          "description": "House-made tomato sauce, lightly spiced"
+        },
+        "shrimp_white_sauce": {
+          "label": "Shrimp in white sauce",
+          "description": "Smooth and creamy white sauce"
+        },
+        "pork_homemade_sauce": {
+          "label": "Pork in homemade sauce",
+          "description": "Pork cooked in our flavorful homemade tomato sauce"
+        },
+        "chimichurri_chicken": {
+          "label": "Chimichurri chicken",
+          "description": "Chicken breast cooked with our homemade herb and garlic sauce"
+        },
+        "traditional_beef_stew": {
+          "label": "Traditional beef stew",
+          "description": "Slow-cooked beef in a rich sauce with vegetables and spices"
+        },
+        "homemade_meatballs": {
+          "label": "Homemade meatballs",
+          "description": "House-made meatballs served with an aromatic tomato sauce"
+        }
+      }
+    },
+    "offers": {
+      "title": "Special offers",
+      "items": {
+        "lunch_of_the_day": {
+          "label": "Lunch of the day",
+          "description": "Ask us about today’s special"
+        }
+      }
+    },
+    "refresh": {
+      "title": "Refreshments",
+      "items": {
+        "fresca": {
+          "label": "Fresca"
+        },
+        "coca_cola": {
+          "label": "Coca-Cola"
+        },
+        "coca_zero": {
+          "label": "Coca-Cola Zero"
+        },
+        "ginger_ale": {
+          "label": "Ginger ale"
+        },
+        "water_600": {
+          "label": "Water",
+          "description": "600 ml"
+        },
+        "water_1l": {
+          "label": "Water",
+          "description": "1 L"
+        }
+      }
+    },
+    "smoothies": {
+      "title": "Smoothies",
+      "items": {
+        "passion_ginger": {
+          "label": "Passion Ginger",
+          "description": "Passion fruit, ginger, honey, lime, homemade ginger beer"
+        },
+        "strawberry_cloud": {
+          "label": "Strawberry Cloud",
+          "description": "Strawberry, honey, almond milk, passion fruit"
+        },
+        "el_ponche": {
+          "label": "El Ponche",
+          "description": "Cherry, papaya, pineapple"
+        },
+        "smoothie_simple": {
+          "label": "Simple Smoothie",
+          "description": "Choose 1 to 3 fruits"
+        }
+      }
+    },
+    "toShare": {
+      "title": "To Share",
+      "items": {
+        "empanada_1": {
+          "label": "Empanada x1",
+          "description": "One empanada: chicken, beef or cheese"
+        },
+        "empanada_3": {
+          "label": "Empanadas x3",
+          "description": "Three empanadas of your choice (chicken, beef or cheese)"
+        },
+        "tortilla": {
+          "label": "Tortilla",
+          "description": ""
+        },
+        "fries_or_patacones": {
+          "label": "French fries / Patacones",
+          "description": ""
+        },
+        "mediterranean_dip": {
+          "label": "Mediterranean dip",
+          "description": "Eggplant and chickpea cream with lemon, garlic and cumin"
+        }
+      }
+    }
+  }
+}

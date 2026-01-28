@@ -1,0 +1,298 @@
+{
+  "common": {
+    "back": "Volver"
+  },
+  "labels": {
+    "breakfast": "Desayuno",
+    "bowls-crepes": "Bowls y Crepes",
+    "food": "Comida",
+    "drinks": "Bebidas"
+  },
+  "menu": {
+    "bowls": {
+      "title": "Bowls",
+      "items": {
+        "fruit_bowl": {
+          "label": "Fruit Bowl",
+          "description": "Frutas de la temporada, mantequilla de maní y miel"
+        },
+        "el_classico": {
+          "label": "El Clásico",
+          "description": "Yogurt griego, frutas de la temporada, mantequilla de maní y chía"
+        },
+        "granola_bowl": {
+          "label": "Granola Bowl",
+          "description": "Yogurt griego, granola, frutas de la temporada y mantequilla de maní"
+        },
+        "smoothie_bowl": {
+          "label": "Smoothie Bowl",
+          "description": "Smoothie, frutas de la temporada, granola y miel"
+        }
+      },
+      "extras": {
+        "honey": "Miel",
+        "peanut_butter": "Mantequilla de maní",
+        "chia": "Chía"
+      }
+    },
+    "breakfast": {
+      "title": "Desayunos",
+      "availableUntil": "Disponible hasta las 18:00",
+      "items": {
+        "pancakes": {
+          "label": "Pancakes",
+          "description": ""
+        },
+        "omelette": {
+          "label": "Omelette",
+          "description": "Omelette con jamón, queso y vegetales. Incluye tortilla"
+        },
+        "eggs_your_way": {
+          "label": "Huevos a tu gusto",
+          "description": "Huevos revueltos o fritos, incluye tortilla (elige uno: jamón, queso o vegetales)"
+        },
+        "tortilla_with_meat": {
+          "label": "Tortilla con carne",
+          "description": "Ropa vieja, tortillas (x2), ensalada de tomate"
+        }
+      }
+    },
+    "burgers": {
+      "title": "Hamburguesas",
+      "items": {
+        "burger": {
+          "label": "Hamburguesa",
+          "description": "Carne o pollo con cebolla, tomate, lechuga y queso"
+        },
+        "special_burger": {
+          "label": "Hamburguesa especial",
+          "description": "Carne smash, huevo, cebolla caramelizada, tomate, lechuga, queso y salsa especial"
+        }
+      },
+      "extras": {
+        "double": "Doble",
+        "pickles": "Pepinillo",
+        "bacon": "Tocino",
+        "cheese": "Queso"
+      }
+    },
+    "coffee": {
+      "title": "Café y Bebidas",
+      "items": {
+        "espresso": {
+          "label": "Expresso",
+          "description": ""
+        },
+        "double_espresso": {
+          "label": "Doble expresso",
+          "description": ""
+        },
+        "americano": {
+          "label": "Americano",
+          "description": ""
+        },
+        "coffee_with_milk": {
+          "label": "Café con leche",
+          "description": ""
+        },
+        "cappuccino": {
+          "label": "Cappuccino",
+          "description": ""
+        },
+        "mocha": {
+          "label": "Mocha",
+          "description": ""
+        },
+        "hot_chocolate": {
+          "label": "Chocolate",
+          "description": ""
+        },
+        "hot_chocolate_with_milk": {
+          "label": "Chocolate con leche",
+          "description": ""
+        },
+        "tea": {
+          "label": "Té",
+          "description": ""
+        },
+        "iced_americano": {
+          "label": "Iced Americano",
+          "description": ""
+        },
+        "iced_latte": {
+          "label": "Iced Latte",
+          "description": ""
+        },
+        "chocolate_caramel_frappe": {
+          "label": "Frappe de chocolate o caramelo",
+          "description": ""
+        }
+      },
+      "extras": {
+        "milk": "Leche",
+        "peanut_butter": "Mantequilla de maní",
+        "honey": "Miel",
+        "protein": "Proteína"
+      }
+    },
+    "crepes": {
+      "title": "Crepes",
+      "items": {
+        "sugar": {
+          "label": "Azúcar",
+          "description": ""
+        },
+        "sugar_salted_butter": {
+          "label": "Azúcar y mantequilla salada",
+          "description": ""
+        },
+        "chocolate_or_caramel": {
+          "label": "Chocolate o caramelo",
+          "description": ""
+        },
+        "chocolate_or_caramel_with_cream": {
+          "label": "Chocolate o caramelo con chantilly",
+          "description": ""
+        },
+        "banana_temptation": {
+          "label": "Plátano tentación",
+          "description": "Plátano y chocolate o caramelo"
+        },
+        "banana_temptation_with_cream": {
+          "label": "Plátano tentación con chantilly",
+          "description": "Plátano y chocolate o caramelo"
+        },
+        "classic_combo": {
+          "label": "Combo clásico",
+          "description": "Café con crepe de azúcar o azúcar y mantequilla salada"
+        },
+        "sweet_combo": {
+          "label": "Combo goloso",
+          "description": "Café con crepe de chocolate o caramelo"
+        },
+        "specialty_combo": {
+          "label": "Combo especialidad",
+          "description": "Café con crepe de plátano tentación"
+        }
+      }
+    },
+    "mainDishes": {
+      "title": "Platos principales",
+      "comment": "Opciones de acompañamiento: arroz, patacones o papas fritas",
+      "items": {
+        "whole_fried_fish": {
+          "label": "Pescado frito entero",
+          "description": "Pescado fresco, frito al momento"
+        },
+        "garlic_shrimp": {
+          "label": "Camarones al ajillo",
+          "description": "Camarones salteados con ajo y mantequilla"
+        },
+        "shrimp_red_sauce": {
+          "label": "Camarones en salsa roja",
+          "description": "Salsa de tomate casera, ligeramente especiada"
+        },
+        "shrimp_white_sauce": {
+          "label": "Camarones en salsa blanca",
+          "description": "Salsa blanca suave y cremosa"
+        },
+        "pork_homemade_sauce": {
+          "label": "Cerdo en salsa casera",
+          "description": "Cerdo cocinado en nuestra salsa de tomate casera"
+        },
+        "chimichurri_chicken": {
+          "label": "Pollo al chimichurri",
+          "description": "Pechuga de pollo cocinada con nuestra salsa casera de hierbas y ajo"
+        },
+        "traditional_beef_stew": {
+          "label": "Guiso tradicional de carne",
+          "description": "Carne de res cocida lentamente con vegetales y especias"
+        },
+        "homemade_meatballs": {
+          "label": "Albóndigas caseras",
+          "description": "Albóndigas hechas en casa servidas con salsa de tomate aromática"
+        }
+      }
+    },
+    "offers": {
+      "title": "Ofertas",
+      "items": {
+        "lunch_of_the_day": {
+          "label": "Almuerzo del día",
+          "description": "Pregúntanos por el plato del día"
+        }
+      }
+    },
+    "refresh": {
+      "title": "Bebidas",
+      "items": {
+        "fresca": {
+          "label": "Fresca"
+        },
+        "coca_cola": {
+          "label": "Coca-Cola"
+        },
+        "coca_zero": {
+          "label": "Coca-Cola Zero"
+        },
+        "ginger_ale": {
+          "label": "Ginger ale"
+        },
+        "water_600": {
+          "label": "Agua",
+          "description": "600 ml"
+        },
+        "water_1l": {
+          "label": "Agua",
+          "description": "1 L"
+        }
+      }
+    },
+    "smoothies": {
+      "title": "Smoothies",
+      "items": {
+        "passion_ginger": {
+          "label": "Passion Ginger",
+          "description": "Maracuyá, jengibre, miel, limón, ginger beer artesanal"
+        },
+        "strawberry_cloud": {
+          "label": "Strawberry Cloud",
+          "description": "Fresa, miel, leche de almendra, maracuyá"
+        },
+        "el_ponche": {
+          "label": "El Ponche",
+          "description": "Cereza, papaya, piña"
+        },
+        "smoothie_simple": {
+          "label": "Smoothie simple",
+          "description": "Elige de 1 a 3 frutas"
+        }
+      }
+    },
+    "toShare": {
+      "title": "Para compartir",
+      "items": {
+        "empanada_1": {
+          "label": "Empanada x1",
+          "description": "Una empanada de pollo, carne o queso"
+        },
+        "empanada_3": {
+          "label": "Empanadas x3",
+          "description": "Tres empanadas a elección (pollo, carne o queso)"
+        },
+        "tortilla": {
+          "label": "Tortilla",
+          "description": ""
+        },
+        "fries_or_patacones": {
+          "label": "Papas fritas / Patacones",
+          "description": ""
+        },
+        "mediterranean_dip": {
+          "label": "Dip mediterráneo",
+          "description": "Crema de berenjena y garbanzo con limón, ajo y comino"
+        }
+      }
+    }
+  }
+}

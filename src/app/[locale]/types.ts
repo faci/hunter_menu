@@ -11,6 +11,7 @@ type Extra = {
 
 type Menu = {
   categorie: string;
+  i18nKey: string;
   plats: Plat[];
   availableFrom?: number;
   availableUntil?: number;
