@@ -1,24 +1,16 @@
-import type { Metadata } from "next";
-import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-
-export const metadata: Metadata = {
-  title: "Hunter menu",
-  description: "Menu of Hunter coffee shop",
-};
 
 export default async function LocaleLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }) {
-  const { locale } = await params;
+  const { locale } = params;
 
   let messages;
-
   try {
     messages = (await import(`../messages/${locale}.json`)).default;
   } catch {

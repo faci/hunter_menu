@@ -1,7 +1,10 @@
-import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
+import createMiddleware from 'next-intl/middleware';
 
-export function middleware(request: NextRequest) {
-  console.log("🔥 MIDDLEWARE HIT", request.nextUrl.pathname);
-  return NextResponse.redirect(new URL("/es", request.url));
-}
+export default createMiddleware({
+  locales: ['en', 'es'],
+  defaultLocale: 'es'
+});
+
+export const config = {
+  matcher: ['/', '/(en|es)/:path*']
+};
