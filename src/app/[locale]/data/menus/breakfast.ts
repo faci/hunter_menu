@@ -7,7 +7,7 @@ export const Breakfast = {
     {
       label: "menu.breakfast.items.pancakes.label",
       description: "",
-      price: 5
+      price: 6
     },
     {
       label: "menu.breakfast.items.omelette.label",

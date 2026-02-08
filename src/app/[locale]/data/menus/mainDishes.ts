@@ -38,11 +38,6 @@ export const MainDishes = {
       description: 'menu.mainDishes.items.traditional_beef_stew.description',
       price: 9.0
     },
-    {
-      label: 'menu.mainDishes.items.homemade_meatballs.label',
-      description: 'menu.mainDishes.items.homemade_meatballs.description',
-      price: 8.5
-    }
   ],
   comment: 'menu.mainDishes.comment'
 };

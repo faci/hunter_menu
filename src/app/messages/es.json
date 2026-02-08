@@ -207,10 +207,6 @@
         "traditional_beef_stew": {
           "label": "Guiso tradicional de carne",
           "description": "Carne de res cocida lentamente con vegetales y especias"
-        },
-        "homemade_meatballs": {
-          "label": "Albóndigas caseras",
-          "description": "Albóndigas hechas en casa servidas con salsa de tomate aromática"
         }
       }
     },

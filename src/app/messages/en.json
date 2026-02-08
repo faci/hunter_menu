@@ -207,10 +207,6 @@
         "traditional_beef_stew": {
           "label": "Traditional beef stew",
           "description": "Slow-cooked beef in a rich sauce with vegetables and spices"
-        },
-        "homemade_meatballs": {
-          "label": "Homemade meatballs",
-          "description": "House-made meatballs served with an aromatic tomato sauce"
         }
       }
     },
