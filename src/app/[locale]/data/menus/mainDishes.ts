@@ -19,11 +19,6 @@ export const MainDishes = {
       price: 14.5
     },
     {
-      label: 'menu.mainDishes.items.pork_homemade_sauce.label',
-      description: 'menu.mainDishes.items.pork_homemade_sauce.description',
-      price: 8.5
-    },
-    {
       label: 'menu.mainDishes.items.chimichurri_chicken.label',
       description: 'menu.mainDishes.items.chimichurri_chicken.description',
       price: 8.5

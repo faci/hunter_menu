@@ -192,10 +192,6 @@
           "label": "Camarones en salsa roja",
           "description": "Salsa de tomate casera, ligeramente especiada"
         },
-        "pork_homemade_sauce": {
-          "label": "Cerdo en salsa casera",
-          "description": "Cerdo cocinado en nuestra salsa de tomate casera"
-        },
         "chimichurri_chicken": {
           "label": "Pollo al chimichurri",
           "description": "Pechuga de pollo cocinada con nuestra salsa casera de hierbas y ajo"
