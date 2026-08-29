@@ -16,22 +16,22 @@ export const Crepes = {
     {
       label: "menu.crepes.items.chocolate_or_caramel.label",
       description: "menu.crepes.items.chocolate_or_caramel.description",
-      price: 4.5
+      price: 5
     },
     {
       label: "menu.crepes.items.chocolate_or_caramel_with_cream.label",
       description: "menu.crepes.items.chocolate_or_caramel_with_cream.description",
-      price: 5.5
+      price: 6
     },
     {
       label: "menu.crepes.items.banana_temptation.label",
       description: "menu.crepes.items.banana_temptation.description",
-      price: 6.5
+      price: 7
     },
     {
       label: "menu.crepes.items.banana_temptation_with_cream.label",
       description: "menu.crepes.items.banana_temptation_with_cream.description",
-      price: 7
+      price: 7.5
     },
     {
       label: "menu.crepes.items.classic_combo.label",
@@ -46,7 +46,7 @@ export const Crepes = {
     {
       label: "menu.crepes.items.specialty_combo.label",
       description: "menu.crepes.items.specialty_combo.description",
-      price: 8
+      price: 8.5
     },
   ],
 };

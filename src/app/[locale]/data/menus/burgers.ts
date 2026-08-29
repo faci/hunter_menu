@@ -6,12 +6,12 @@ export const Burgers = {
     {
       label: 'menu.burgers.items.burger.label',
       description: 'menu.burgers.items.burger.description',
-      price: 8.5
+      price: 9
     },
     {
       label: 'menu.burgers.items.special_burger.label',
       description: 'menu.burgers.items.special_burger.description',
-      price: 10.0
+      price: 11.0
     },
   ],
   extras: [

@@ -9,11 +9,6 @@ export const ToShare = {
       price: 1
     },
     {
-      label: 'menu.toShare.items.empanada_3.label',
-      description: 'menu.toShare.items.empanada_3.description',
-      price: 2.5
-    },
-    {
       label: 'menu.toShare.items.tortilla.label',
       description: '',
       price: 1.25
@@ -21,12 +16,12 @@ export const ToShare = {
     {
       label: 'menu.toShare.items.fries_or_patacones.label',
       description: '',
-      price: 2.5
+      price: 3
     },
     {
       label: 'menu.toShare.items.mediterranean_dip.label',
       description: 'menu.toShare.items.mediterranean_dip.description',
-      price: 6
+      price: 6.5
     }
   ],
 };

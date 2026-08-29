@@ -5,7 +5,7 @@ import { MainDishes } from './menus/mainDishes';
 import { ToShare } from './menus/toShare';
 import { Menu } from './menu_type';
 import { Burgers } from './menus/burgers';
-import { Offers } from './menus/offers';
+// import { Offers } from './menus/offers';
 import { Coffee } from './menus/coffee';
 import { Refresh } from './menus/refresh';
 import { Smoothies } from './menus/smoothies';
@@ -17,7 +17,7 @@ export const AllMenus = [
   Bowls,
   Crepes,
   Burgers,
-  Offers,
+  // Offers,
   Coffee,
   Refresh,
   Smoothies
