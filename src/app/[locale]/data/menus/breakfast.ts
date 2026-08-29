@@ -16,12 +16,12 @@ export const Breakfast = {
     {
       label: "menu.breakfast.items.eggs_your_way.label",
       description: "menu.breakfast.items.eggs_your_way.description",
-      price: 4.5
+      price: 5.5
     },
     {
       label: "menu.breakfast.items.tortilla_with_meat.label",
       description: "menu.breakfast.items.tortilla_with_meat.description",
-      price: 5
+      price: 6.25
     }
   ]
 };

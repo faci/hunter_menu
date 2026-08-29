@@ -199,6 +199,14 @@
         "traditional_beef_stew": {
           "label": "Traditional beef stew",
           "description": "Slow-cooked beef in a rich sauce with vegetables and spices"
+        },
+        "bbq_chicken_wings_6x": {
+          "label": "BBQ chicken wings (6x)",
+          "description": ""
+        },
+        "bbq_chicken_wings_10x": {
+          "label": "BBQ chicken wings (10x)",
+          "description": ""
         }
       }
     },
@@ -259,7 +267,11 @@
         },
         "smoothie_simple": {
           "label": "Simple Smoothie",
-          "description": "Choose 1 to 3 fruits"
+          "description": "Choose 1 fruit (papaya, pineapple, strawberry, banana, passion fruit)"
+        },
+        "smoothie_composed": {
+          "label": "Composed Smoothie",
+          "description": "Choose 2 to 3 fruit (papaya, pineapple, strawberry, banana, passion fruit)"
         }
       }
     },
@@ -280,6 +292,10 @@
         },
         "fries_or_patacones": {
           "label": "French fries / Patacones",
+          "description": ""
+        },
+        "rice": {
+          "label": "Rice",
           "description": ""
         },
         "mediterranean_dip": {

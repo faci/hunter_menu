@@ -8,16 +8,16 @@ export const MainDishes = {
       description: "menu.mainDishes.items.whole_fried_fish.description",
       price: 17
     },
-    {
-      label: "menu.mainDishes.items.garlic_shrimp.label",
-      description: "menu.mainDishes.items.garlic_shrimp.description",
-      price: 14
-    },
-    {
-      label: "menu.mainDishes.items.shrimp_red_sauce.label",
-      description: "menu.mainDishes.items.shrimp_red_sauce.description",
-      price: 15
-    },
+    // {
+    //   label: "menu.mainDishes.items.garlic_shrimp.label",
+    //   description: "menu.mainDishes.items.garlic_shrimp.description",
+    //   price: 14
+    // },
+    // {
+    //   label: "menu.mainDishes.items.shrimp_red_sauce.label",
+    //   description: "menu.mainDishes.items.shrimp_red_sauce.description",
+    //   price: 15
+    // },
     {
       label: 'menu.mainDishes.items.chimichurri_chicken.label',
       description: 'menu.mainDishes.items.chimichurri_chicken.description',
@@ -27,6 +27,16 @@ export const MainDishes = {
       label: 'menu.mainDishes.items.traditional_beef_stew.label',
       description: 'menu.mainDishes.items.traditional_beef_stew.description',
       price: 10.5
+    },
+    {
+      label: 'menu.mainDishes.items.bbq_chicken_wings_6x.label',
+      description: 'menu.mainDishes.items.bbq_chicken_wings_6x.description',
+      price: 10.5
+    },
+    {
+      label: 'menu.mainDishes.items.bbq_chicken_wings_10x.label',
+      description: 'menu.mainDishes.items.bbq_chicken_wings_10x.description',
+      price: 15
     },
   ],
   comment: 'menu.mainDishes.comment'

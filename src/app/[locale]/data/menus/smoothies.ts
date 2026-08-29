@@ -23,5 +23,10 @@ export const Smoothies = {
       description: "menu.smoothies.items.smoothie_simple.description",
       price: 3
     },
+    {
+      label: "menu.smoothies.items.smoothie_composed.label",
+      description: "menu.smoothies.items.smoothie_composed.description",
+      price: 4
+    },
   ],
 };

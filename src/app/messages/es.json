@@ -199,6 +199,14 @@
         "traditional_beef_stew": {
           "label": "Guiso tradicional de carne",
           "description": "Ropa vieja cocida lentamente con vegetales y especias"
+        },
+        "bbq_chicken_wings_6x": {
+          "label": "Alitas de pollo BBQ (6x)",
+          "description": ""
+        },
+        "bbq_chicken_wings_10x": {
+          "label": "Alitas de pollo BBQ (10x)",
+          "description": ""
         }
       }
     },
@@ -258,8 +266,12 @@
           "description": "Cereza, papaya, piña, fresa, banana, maracuya, miel"
         },
         "smoothie_simple": {
-          "label": "Smoothie simple",
-          "description": "Elige de 1 a 3 frutas"
+          "label": "Batido simple",
+          "description": "Elige 1 fruta (papaya, piña, fresa, banana, maracuya)"
+        },
+        "smoothie_composed": {
+          "label": "Batido Personalizado",
+          "description": "Elige de 2 a 3 frutas (papaya, piña, fresa, banana, maracuyá)"
         }
       }
     },
@@ -280,6 +292,10 @@
         },
         "fries_or_patacones": {
           "label": "Papas fritas / Patacones",
+          "description": ""
+        },
+        "rice": {
+          "label": "Arroz",
           "description": ""
         },
         "mediterranean_dip": {

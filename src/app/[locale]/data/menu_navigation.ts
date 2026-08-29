@@ -17,7 +17,8 @@ export const MenuNavigation = [
   {
     id: 'food',
     label: 'labels.food',
-    children: ['to-share', 'main-dishes', 'burgers', 'offers']
+    children: ['to-share', 'main-dishes', 'burgers']
+    // children: ['to-share', 'main-dishes', 'burgers', 'offers']
   },
   {
     id: 'drinks',

@@ -11,7 +11,7 @@ export const Coffee = {
     {
       label: "menu.coffee.items.double_espresso.label",
       description: "",
-      price: 3
+      price: 3.5
     },
     {
       label: "menu.coffee.items.americano.label",

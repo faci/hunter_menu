@@ -6,7 +6,12 @@ export const ToShare = {
     {
       label: 'menu.toShare.items.empanada_1.label',
       description: 'menu.toShare.items.empanada_1.description',
-      price: 1
+      price: 1.25
+    },
+    {
+      label: 'menu.toShare.items.empanada_3.label',
+      description: 'menu.toShare.items.empanada_3.description',
+      price: 3.25
     },
     {
       label: 'menu.toShare.items.tortilla.label',
@@ -17,6 +22,11 @@ export const ToShare = {
       label: 'menu.toShare.items.fries_or_patacones.label',
       description: '',
       price: 3
+    },
+    {
+      label: 'menu.toShare.items.rice.label',
+      description: '',
+      price: 2
     },
     {
       label: 'menu.toShare.items.mediterranean_dip.label',
