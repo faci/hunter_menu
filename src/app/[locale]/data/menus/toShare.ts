@@ -16,7 +16,7 @@ export const ToShare = {
     {
       label: 'menu.toShare.items.tortilla.label',
       description: '',
-      price: 1.25
+      price: 1
     },
     {
       label: 'menu.toShare.items.fries_or_patacones.label',
