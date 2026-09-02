@@ -199,14 +199,24 @@
         "traditional_beef_stew": {
           "label": "Traditional beef stew",
           "description": "Slow-cooked beef in a rich sauce with vegetables and spices"
+        }
+      }
+    },
+    "alitas": {
+      "title": "Chicken wings",
+      "comment": "Choose your sauce: BBQ or sweet and sour",
+      "items": {
+        "alitas_3x": {
+          "label": "Chicken wings (3x)",
+          "description": "Choose one side: french fries, rice or patacones"
         },
-        "bbq_chicken_wings_6x": {
-          "label": "BBQ chicken wings (6x)",
-          "description": ""
+        "alitas_6x": {
+          "label": "Chicken wings (6x)",
+          "description": "Choose one side: french fries, rice or patacones"
         },
-        "bbq_chicken_wings_10x": {
-          "label": "BBQ chicken wings (10x)",
-          "description": ""
+        "alitas_12x": {
+          "label": "Chicken wings (12x)",
+          "description": "Includes 2 sides: french fries and patacones"
         }
       }
     },
