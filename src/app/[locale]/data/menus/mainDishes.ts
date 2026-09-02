@@ -28,16 +28,6 @@ export const MainDishes = {
       description: 'menu.mainDishes.items.traditional_beef_stew.description',
       price: 10.5
     },
-    {
-      label: 'menu.mainDishes.items.bbq_chicken_wings_6x.label',
-      description: 'menu.mainDishes.items.bbq_chicken_wings_6x.description',
-      price: 10.5
-    },
-    {
-      label: 'menu.mainDishes.items.bbq_chicken_wings_10x.label',
-      description: 'menu.mainDishes.items.bbq_chicken_wings_10x.description',
-      price: 15
-    },
   ],
   comment: 'menu.mainDishes.comment'
 };

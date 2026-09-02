@@ -5,6 +5,7 @@
   "labels": {
     "breakfast": "Desayuno",
     "bowls-crepes": "Bowls y Crepes",
+    "to-share": "Para compartir y picar",
     "food": "Comida",
     "drinks": "Bebidas",
     "coffee": "Cafés"
@@ -199,14 +200,24 @@
         "traditional_beef_stew": {
           "label": "Guiso tradicional de carne",
           "description": "Ropa vieja cocida lentamente con vegetales y especias"
+        }
+      }
+    },
+    "alitas": {
+      "title": "Alitas",
+      "comment": "Salsa a elegir: BBQ o agridulce",
+      "items": {
+        "alitas_3x": {
+          "label": "Alitas (3x)",
+          "description": "Acompañante a elegir: papas fritas, arroz o patacones"
         },
-        "bbq_chicken_wings_6x": {
-          "label": "Alitas de pollo BBQ (6x)",
-          "description": ""
+        "alitas_6x": {
+          "label": "Alitas (6x)",
+          "description": "Acompañante a elegir: papas fritas, arroz o patacones"
         },
-        "bbq_chicken_wings_10x": {
-          "label": "Alitas de pollo BBQ (10x)",
-          "description": ""
+        "alitas_12x": {
+          "label": "Alitas (12x)",
+          "description": "Incluye 2 acompañantes: papas fritas y patacones"
         }
       }
     },
@@ -276,7 +287,7 @@
       }
     },
     "toShare": {
-      "title": "Para compartir",
+      "title": "Para compartir y picar",
       "items": {
         "empanada_1": {
           "label": "Empanada x1",

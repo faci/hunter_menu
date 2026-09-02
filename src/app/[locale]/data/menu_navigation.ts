@@ -15,10 +15,15 @@ export const MenuNavigation = [
     children: ['bowls', 'crepes']
   },
   {
+    id: 'to-share',
+    label: 'labels.to-share',
+    children: ['to-share']
+  },
+  {
     id: 'food',
     label: 'labels.food',
-    children: ['to-share', 'main-dishes', 'burgers']
-    // children: ['to-share', 'main-dishes', 'burgers', 'offers']
+    children: ['main-dishes', 'alitas', 'burgers']
+    // children: ['main-dishes', 'alitas', 'burgers', 'offers']
   },
   {
     id: 'drinks',
