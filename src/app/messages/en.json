@@ -139,9 +139,9 @@
     "crepes": {
       "title": "Crepes",
       "subtitles": {
-        "clasica": "Clasica",
-        "golosa": "Golosa",
-        "especial": "Especial"
+        "clasica": "Classic",
+        "golosa": "Sweet",
+        "especial": "Specialty"
       },
       "items": {
         "sugar": {
@@ -174,15 +174,15 @@
       "title": "Combos",
       "items": {
         "clasica": {
-          "label": "Clasica",
+          "label": "Classic",
           "description": "Espresso or Americano with a sugar or sugar & butter crepe"
         },
         "golosa": {
-          "label": "Golosa",
+          "label": "Sweet",
           "description": "Espresso or Americano with a chocolate or caramel crepe"
         },
         "especial": {
-          "label": "Especial",
+          "label": "Specialty",
           "description": "Espresso or Americano with our signature plantain temptation crepe"
         }
       }
