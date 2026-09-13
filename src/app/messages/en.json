@@ -272,7 +272,7 @@
       }
     },
     "smoothiesClassicals": {
-      "title": "Classicals",
+      "title": "Smoothie classic",
       "items": {
         "smoothie_simple": {
           "label": "Simple Smoothie",
@@ -285,7 +285,7 @@
       }
     },
     "smoothiesHouse": {
-      "title": "House",
+      "title": "Smoothie from the house",
       "items": {
         "passion_ginger": {
           "label": "Passion Ginger",
