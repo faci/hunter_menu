@@ -271,8 +271,21 @@
         }
       }
     },
-    "smoothies": {
-      "title": "Smoothies",
+    "smoothiesClassicals": {
+      "title": "Clásicos",
+      "items": {
+        "smoothie_simple": {
+          "label": "Batido simple",
+          "description": "Elige 1 fruta (papaya, piña, fresa, banana, maracuya)"
+        },
+        "smoothie_composed": {
+          "label": "Batido Personalizado",
+          "description": "Elige de 2 a 3 frutas (papaya, piña, fresa, banana, maracuyá)"
+        }
+      }
+    },
+    "smoothiesHouse": {
+      "title": "De la casa",
       "items": {
         "passion_ginger": {
           "label": "Passion Ginger",
@@ -285,14 +298,6 @@
         "el_ponche": {
           "label": "El Ponche",
           "description": "Cereza, papaya, piña, fresa, banana, maracuya, miel"
-        },
-        "smoothie_simple": {
-          "label": "Batido simple",
-          "description": "Elige 1 fruta (papaya, piña, fresa, banana, maracuya)"
-        },
-        "smoothie_composed": {
-          "label": "Batido Personalizado",
-          "description": "Elige de 2 a 3 frutas (papaya, piña, fresa, banana, maracuyá)"
         }
       }
     },

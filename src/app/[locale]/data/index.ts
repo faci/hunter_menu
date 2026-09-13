@@ -10,7 +10,7 @@ import { Burgers } from './menus/burgers';
 // import { Offers } from './menus/offers';
 import { Coffee } from './menus/coffee';
 import { Refresh } from './menus/refresh';
-import { Smoothies } from './menus/smoothies';
+import { SmoothiesClassicals, SmoothiesHouse } from './menus/smoothies';
 
 export const AllMenus = [
   Breakfast,
@@ -24,7 +24,8 @@ export const AllMenus = [
   // Offers,
   Coffee,
   Refresh,
-  Smoothies
+  SmoothiesClassicals,
+  SmoothiesHouse
 ];
 
 export const MenuById: { [k: string]: Menu } = Object.fromEntries(

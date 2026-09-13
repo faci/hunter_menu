@@ -271,8 +271,21 @@
         }
       }
     },
-    "smoothies": {
-      "title": "Smoothies",
+    "smoothiesClassicals": {
+      "title": "Classicals",
+      "items": {
+        "smoothie_simple": {
+          "label": "Simple Smoothie",
+          "description": "Choose 1 fruit (papaya, pineapple, strawberry, banana, passion fruit)"
+        },
+        "smoothie_composed": {
+          "label": "Composed Smoothie",
+          "description": "Choose 2 to 3 fruit (papaya, pineapple, strawberry, banana, passion fruit)"
+        }
+      }
+    },
+    "smoothiesHouse": {
+      "title": "House",
       "items": {
         "passion_ginger": {
           "label": "Passion Ginger",
@@ -285,14 +298,6 @@
         "el_ponche": {
           "label": "El Ponche",
           "description": "Cherry, papaya, pineapple, strawberry, banana, passion fruit, honey"
-        },
-        "smoothie_simple": {
-          "label": "Simple Smoothie",
-          "description": "Choose 1 fruit (papaya, pineapple, strawberry, banana, passion fruit)"
-        },
-        "smoothie_composed": {
-          "label": "Composed Smoothie",
-          "description": "Choose 2 to 3 fruit (papaya, pineapple, strawberry, banana, passion fruit)"
         }
       }
     },

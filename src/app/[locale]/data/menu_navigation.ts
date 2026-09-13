@@ -28,6 +28,6 @@ export const MenuNavigation = [
   {
     id: 'drinks',
     label: 'labels.drinks',
-    children: ['smoothies', 'refresh']
+    children: ['smoothies-classicals', 'smoothies-house', 'refresh']
   }
 ];
