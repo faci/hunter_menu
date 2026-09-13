@@ -6,6 +6,7 @@ import { useRouter, usePathname } from "next/navigation";
 
 import { MenuNavigation } from "./data/menu_navigation";
 import { MenuById } from "./data";
+import { groupPlatesBySubtitle } from "./utils";
 
 type MenuNavigationType = {
   id: string;
@@ -92,29 +93,52 @@ export default function MenuPage() {
                   </h2>
 
                   {/* Plats */}
-                  <div className="space-y-7">
-                    {menu.plats.map((plat) => (
+                  <div className="space-y-8">
+                    {groupPlatesBySubtitle(menu.plats).map((group) => (
                       <div
-                        key={plat.label + plat.price}
-                        className="pb-4 border-b border-neutral-800"
+                        key={group.subtitle ?? group.plats[0].label}
+                        className={
+                          group.subtitle
+                            ? "rounded-xl border border-orange-500/15 bg-neutral-800/40 p-5"
+                            : undefined
+                        }
                       >
-                        <div className="flex justify-between gap-6">
-                          <p className="text-lg font-medium">
-                            {t(plat.label)}
-                          </p>
-
-                          {plat.price > 0 && (
-                            <p className="text-lg font-medium text-orange-400">
-                              ${plat.price}
-                            </p>
-                          )}
-                        </div>
-
-                        {plat.description && (
-                          <p className="text-sm text-neutral-400 mt-1">
-                            {t(plat.description)}
-                          </p>
+                        {group.subtitle && (
+                          <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-400 mb-5">
+                            {t(group.subtitle)}
+                          </h3>
                         )}
+
+                        <div className="space-y-7">
+                          {group.plats.map((plat, platIndex) => (
+                            <div
+                              key={plat.label + plat.price}
+                              className={
+                                group.subtitle && platIndex === group.plats.length - 1
+                                  ? "pb-1"
+                                  : "pb-4 border-b border-neutral-800"
+                              }
+                            >
+                              <div className="flex justify-between gap-6">
+                                <p className="text-lg font-medium">
+                                  {t(plat.label)}
+                                </p>
+
+                                {plat.price > 0 && (
+                                  <p className="text-lg font-medium text-orange-400">
+                                    ${plat.price}
+                                  </p>
+                                )}
+                              </div>
+
+                              {plat.description && (
+                                <p className="text-sm text-neutral-400 mt-1">
+                                  {t(plat.description)}
+                                </p>
+                              )}
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     ))}
                   </div>

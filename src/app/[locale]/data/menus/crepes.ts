@@ -4,6 +4,7 @@ export const Crepes = {
   i18nKey: "menu.crepes",
   plats: [
     {
+      subtitle: "menu.crepes.subtitles.clasica",
       label: "menu.crepes.items.sugar.label",
       description: "menu.crepes.items.sugar.description",
       price: 3.5
@@ -14,6 +15,7 @@ export const Crepes = {
       price: 4.5
     },
     {
+      subtitle: "menu.crepes.subtitles.golosa",
       label: "menu.crepes.items.chocolate_or_caramel.label",
       description: "menu.crepes.items.chocolate_or_caramel.description",
       price: 5
@@ -24,6 +26,7 @@ export const Crepes = {
       price: 6
     },
     {
+      subtitle: "menu.crepes.subtitles.especial",
       label: "menu.crepes.items.banana_temptation.label",
       description: "menu.crepes.items.banana_temptation.description",
       price: 7
@@ -32,21 +35,6 @@ export const Crepes = {
       label: "menu.crepes.items.banana_temptation_with_cream.label",
       description: "menu.crepes.items.banana_temptation_with_cream.description",
       price: 7.5
-    },
-    {
-      label: "menu.crepes.items.classic_combo.label",
-      description: "menu.crepes.items.classic_combo.description",
-      price: 5.5
-    },
-    {
-      label: "menu.crepes.items.sweet_combo.label",
-      description: "menu.crepes.items.sweet_combo.description",
-      price: 6.5
-    },
-    {
-      label: "menu.crepes.items.specialty_combo.label",
-      description: "menu.crepes.items.specialty_combo.description",
-      price: 8.5
     },
   ],
 };

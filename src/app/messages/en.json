@@ -138,6 +138,11 @@
     },
     "crepes": {
       "title": "Crepes",
+      "subtitles": {
+        "clasica": "Classic",
+        "golosa": "Sweet",
+        "especial": "Specialty"
+      },
       "items": {
         "sugar": {
           "label": "Sugar",
@@ -162,17 +167,22 @@
         "banana_temptation_with_cream": {
           "label": "Plantain temptation with whipped cream",
           "description": "Sweet plantain with pineapple and cinnamon, topped with chocolate or caramel and whipped cream"
-        },
-        "classic_combo": {
-          "label": "Combo clasica",
+        }
+      }
+    },
+    "combos": {
+      "title": "Combos",
+      "items": {
+        "clasica": {
+          "label": "Classic",
           "description": "Espresso or Americano with a sugar or sugar & butter crepe"
         },
-        "sweet_combo": {
-          "label": "Combo golosa",
+        "golosa": {
+          "label": "Sweet",
           "description": "Espresso or Americano with a chocolate or caramel crepe"
         },
-        "specialty_combo": {
-          "label": "Combo especial",
+        "especial": {
+          "label": "Specialty",
           "description": "Espresso or Americano with our signature plantain temptation crepe"
         }
       }
@@ -261,8 +271,21 @@
         }
       }
     },
-    "smoothies": {
-      "title": "Smoothies",
+    "smoothiesClassicals": {
+      "title": "Smoothie classic",
+      "items": {
+        "smoothie_simple": {
+          "label": "Simple Smoothie",
+          "description": "Choose 1 fruit (papaya, pineapple, strawberry, banana, passion fruit)"
+        },
+        "smoothie_composed": {
+          "label": "Composed Smoothie",
+          "description": "Choose 2 to 3 fruit (papaya, pineapple, strawberry, banana, passion fruit)"
+        }
+      }
+    },
+    "smoothiesHouse": {
+      "title": "Smoothie from the house",
       "items": {
         "passion_ginger": {
           "label": "Passion Ginger",
@@ -275,14 +298,6 @@
         "el_ponche": {
           "label": "El Ponche",
           "description": "Cherry, papaya, pineapple, strawberry, banana, passion fruit, honey"
-        },
-        "smoothie_simple": {
-          "label": "Simple Smoothie",
-          "description": "Choose 1 fruit (papaya, pineapple, strawberry, banana, passion fruit)"
-        },
-        "smoothie_composed": {
-          "label": "Composed Smoothie",
-          "description": "Choose 2 to 3 fruit (papaya, pineapple, strawberry, banana, passion fruit)"
         }
       }
     },

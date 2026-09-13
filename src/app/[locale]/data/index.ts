@@ -1,6 +1,7 @@
 import { Breakfast } from './menus/breakfast';
 import { Bowls } from './menus/bowls';
 import { Crepes } from './menus/crepes';
+import { Combos } from './menus/combos';
 import { MainDishes } from './menus/mainDishes';
 import { Alitas } from './menus/alitas';
 import { ToShare } from './menus/toShare';
@@ -9,7 +10,7 @@ import { Burgers } from './menus/burgers';
 // import { Offers } from './menus/offers';
 import { Coffee } from './menus/coffee';
 import { Refresh } from './menus/refresh';
-import { Smoothies } from './menus/smoothies';
+import { SmoothiesClassicals, SmoothiesHouse } from './menus/smoothies';
 
 export const AllMenus = [
   Breakfast,
@@ -18,11 +19,13 @@ export const AllMenus = [
   Alitas,
   Bowls,
   Crepes,
+  Combos,
   Burgers,
   // Offers,
   Coffee,
   Refresh,
-  Smoothies
+  SmoothiesClassicals,
+  SmoothiesHouse
 ];
 
 export const MenuById: { [k: string]: Menu } = Object.fromEntries(
