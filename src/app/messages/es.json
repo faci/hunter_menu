@@ -138,6 +138,11 @@
     },
     "crepes": {
       "title": "Crepes",
+      "subtitles": {
+        "clasica": "Clásica",
+        "golosa": "Golosa",
+        "especial": "Especial"
+      },
       "items": {
         "sugar": {
           "label": "Azúcar",
@@ -162,17 +167,22 @@
         "banana_temptation_with_cream": {
           "label": "Tentación de plátano con crema batida",
           "description": "Plátano dulce con piña y canela, acompañado de chocolate o caramelo y crema batida"
-        },
-        "classic_combo": {
-          "label": "Combo clásica",
+        }
+      }
+    },
+    "combos": {
+      "title": "Combos",
+      "items": {
+        "clasica": {
+          "label": "Clásica",
           "description": "Espresso o americano con crepe de azúcar o de azúcar y mantequilla"
         },
-        "sweet_combo": {
-          "label": "Combo golosa",
+        "golosa": {
+          "label": "Golosa",
           "description": "Espresso o americano con crepe de chocolate o caramelo"
         },
-        "specialty_combo": {
-          "label": "Combo especial",
+        "especial": {
+          "label": "Especial",
           "description": "Espresso o americano con nuestra crepe de tentación de plátano"
         }
       }

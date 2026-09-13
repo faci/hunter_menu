@@ -1,6 +1,7 @@
 import { Breakfast } from './menus/breakfast';
 import { Bowls } from './menus/bowls';
 import { Crepes } from './menus/crepes';
+import { Combos } from './menus/combos';
 import { MainDishes } from './menus/mainDishes';
 import { Alitas } from './menus/alitas';
 import { ToShare } from './menus/toShare';
@@ -18,6 +19,7 @@ export const AllMenus = [
   Alitas,
   Bowls,
   Crepes,
+  Combos,
   Burgers,
   // Offers,
   Coffee,

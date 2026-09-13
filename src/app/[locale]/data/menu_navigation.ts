@@ -12,7 +12,7 @@ export const MenuNavigation = [
   {
     id: 'bowls-crepes',
     label: 'labels.bowls-crepes',
-    children: ['bowls', 'crepes']
+    children: ['bowls', 'crepes', 'combos']
   },
   {
     id: 'to-share',

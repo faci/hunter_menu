@@ -2,6 +2,7 @@ export type Plate = {
   label: string;
   description: string;
   price: number;
+  subtitle?: string;
 }
 
 export type Menu = {
